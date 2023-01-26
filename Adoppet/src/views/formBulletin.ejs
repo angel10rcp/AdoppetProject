@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/form-style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Haz tu anuncio !</div>
+        <div class="content">
+            <form action="/insertion/bulletin" method="POST">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Título de anuncio:</span>
+                        <input type="text" name="bulletinName" size="40" required/>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Descripción de Anuncio</span>
+                        <textarea name="bulletinDescription" cols="40" rows="5"></textarea>
+                    </div>
+                    <div class="gender-details">
+                        <span class="gender-title">¿Qué desea anunciar?</span>
+                        <div class="category">
+                            <input type="radio" name="bulletinType" value="LostPet" /> Anunciar una mascota extraviado<br>
+                            <input type="radio" name="bulletinType" value="PetAdoption" /> Anunciar una mascota en adopción<br>
+                        </div>
+                        <br>
+                        <div class="button">
+                            <input type="submit" value="Register" />
+                        </div>
+            </form>
+            </div>
+            </div>
+</body>
+
+</html>

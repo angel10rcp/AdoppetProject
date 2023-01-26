@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/form-style.css" rel="stylesheet" type="text/css">
+    <title>User</title>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="title">Iniciar Sesión</div>
+        <div class="content">
+            <form action="/authentication" method="POST">
+                <div class="user-details">
+
+                    <div class="input-box">
+                        <span class="details">Email del usuario</span>
+                        <input type="email" placeholder="Correo" name="PersonEmail" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Contraseña</span>
+                        <input type="password" placeholder="Contraseña" name="PersonPassword" required>
+                    </div>
+
+                    <br>
+                    <div class="button">
+                        <input type="submit" name="btnSignIn" value="submit" />
+                    </div>
+                    <div class="button">
+                        <a href="/person">No tienes cuenta?, Registrate!</a>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

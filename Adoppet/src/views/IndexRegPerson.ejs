@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Auth...</title>
+
+    <link href="css/form-style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Crear Usuario!</div>
+        <div class="content">
+            <form action="/api/insertion/person" method="POST">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Nombre del usuario:</span>
+                        <input type="text" placeholder="Name" name="PersonName" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email del usuario</span>
+                        <input type="email" placeholder="Correo" name="PersonEmail" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Contraseña</span>
+                        <input type="password" placeholder="Contraseña" name="PersonPassword" required>
+                    </div>
+                    <!-- comment -->
+                    <div class="input-box">
+                        <span class="details">Celular</span>
+                        <input type="text" placeholder="Phone Number" name="PersonPhoneNumber" required>
+                    </div>
+                    <br>
+                    <div class="button">
+                        <input type="submit" name="btnCreate" value="submit" />
+                    </div>
+                    <div class="button">
+                        <a href="/login">Ya tienes una cuenta?, Inicia Sesión!</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/form-style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Editar Mascota Perdida</div>
+        <div class="content">
+            <form action="/updatelostpet" method="POST">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Id de la mascota perdida:</span>
+                        <input type="text" name="idPetLostPet" required value="<%= onelostpet.idPetLostPet%>" />
+                    </div>
+                    <div class="input-box">
+                        <span class="details">¿Todavía sigue perdida?</span>
+                        <input type="text" name="lostFlagLostPet" required  />
+                    </div>
+                    <div class="gender-details">
+                        <span class="gender-title">Lugar donde se perdió</span>
+                        <input type="text" name="lostPetPlace" required  />
+                        <div class="button">
+                            <input type="submit" value="Register" />
+                        </div>
+            </form>
+            </div>
+            </div>
+</body>
+
+</html>

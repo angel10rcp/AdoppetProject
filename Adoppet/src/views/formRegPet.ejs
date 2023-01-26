@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/form-style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Registrar Mascota</div>
+        <div class="content">
+            <form action="/insert/Pet" method="POST">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Nombre Mascota </span>
+                        <input type="text" name="namePet" placeholder="Ingrese nombre mascota" required />
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Raza </span>
+                        <input type="text" name="racePet" placeholder="Ingrese raza mascota" required />
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Color </span>
+                        <input type="text" name="colorPet" placeholder="Ingrese el color mascota" required />
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Tipo Mascota</span>
+                        <input type="text" name="typePet" placeholder="Ingrese tipo mascota" required />
+                    </div>
+                </div>
+                <div class="gender-details">
+                    <input type="radio" name="statusPet" value="lost" id="dot-1" />
+                    <input type="radio" name="statusPet" value="found" id="dot-2" />
+                    <span class="gender-title">Estado</span>
+                    <div class="category">
+                        <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Perdido</span>
+              </label>
+                        <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Encontrado</span>
+              </label>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <span class="details">Descripcion</span>
+                    <textarea name="descriptionPet" rows="5" cols="50"></textarea>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Register" />
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
